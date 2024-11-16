@@ -16,3 +16,19 @@ This repository covers Python Object-Oriented Programming (OOP) concepts with:
 ---
 
 Happy coding!
+
+
+## Documentation
+
+- [In-depth Notes](NOTES.md)
+
+## Examples
+
+1. [Classes and Objects](examples/classes_objects.py)
+   - [Classes and Objects Example](examples/classes_objects.py)
+2. Inheritance (Coming Soon)
+3. Polymorphism (Coming Soon)
+4. Encapsulation (Coming Soon)
+5. Abstraction (Coming Soon)
+6. Modules (Coming Soon)
+7. File Handling (Coming Soon)
