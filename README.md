@@ -17,10 +17,9 @@ This repository covers Python Object-Oriented Programming (OOP) concepts with:
 
 Happy coding!
 
-
 ## Documentation
 
-- [In-depth Notes](Notes.md)
+- [In-depth Notes](NOTES.md)
 
 ## Examples
 
