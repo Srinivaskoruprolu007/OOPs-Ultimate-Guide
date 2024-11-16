@@ -71,9 +71,11 @@ In our example:
 4. **Hierarchical Inheritance**: Multiple classes inherit from a single parent class.
 5. **Hybrid Inheritance**: A combination of multiple inheritance types.
 
+---
+
 ## 3. Polymorphism
 
-## What is Polymorphism?
+### What is Polymorphism?
 
 - **Polymorphism** means "many forms." It allows an object of a subclass to be treated as an object of a superclass.
 - The same method can behave differently based on the object it is called on.
@@ -108,10 +110,41 @@ In our example:
 
 ---
 
-# 4. Encapsulation (Coming Soon)
+## 4. Encapsulation
 
-- **Encapsulation** is the concept of bundling data (attributes) and methods that operate on the data into a single unit (class).
-- We'll also discuss the use of **private** and **public** access modifiers.
+### What is Encapsulation?
+
+- **Encapsulation** is the mechanism of restricting direct access to some of an object's components, while providing controlled access through methods.
+- It bundles data (attributes) and methods that operate on the data within a single unit (class), making the data secure from unauthorized access.
+
+### Key Concepts:
+
+1. **Private Attributes**:
+
+   - Attributes prefixed with double underscores (`__`) are private to the class and cannot be accessed directly from outside the class.
+   - These attributes are meant to be modified only through public methods.
+2. **Public Methods**:
+
+   - These methods provide controlled access to private attributes.
+   - Methods like **getters** and **setters** are used to get or set the values of private attributes.
+3. **Getter and Setter Methods**:
+
+   - **Getters** are methods that allow reading the value of private attributes.
+   - **Setters** are methods that allow modifying the value of private attributes but with certain conditions (e.g., validation).
+
+### Example Explanation:
+
+In our example:
+
+- The `BankAccount` class has a private attribute `__balance` which is encapsulated.
+- To interact with the balance, public methods `deposit()`, `withdraw()`, `get_balance()`, and `set_balance()` are provided.
+- We cannot access the `__balance` directly from outside the class, ensuring that it is modified only through the provided methods.
+
+### Why is Encapsulation Important?
+
+- **Data Security**: By controlling how data is accessed and modified, we reduce the risk of data corruption.
+- **Maintainability**: We can change the internal implementation of a class (e.g., how data is stored) without affecting the code that uses the class, as long as the public interface remains the same.
+- **Flexibility**: We can easily add validation and other logic in setter methods to ensure data integrity.
 
 ---
 

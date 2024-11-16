@@ -60,7 +60,8 @@ This repository is aimed at helping learners understand OOP in Python through st
 
 ### Encapsulation
 
-- [Code Example](examples/encapsulation.py) (Coming Soon)
+- [Code Example](examples/encapsulation.py)
+- [Mini-Project](projects/hard/employee_management_system.py)
 - In-depth explanation in [NOTES.md](NOTES.md)
 
 ### Abstraction
