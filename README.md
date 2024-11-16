@@ -20,7 +20,7 @@ Happy coding!
 
 ## Documentation
 
-- [In-depth Notes](NOTES.md)
+- [In-depth Notes](Notes.md)
 
 ## Examples
 
