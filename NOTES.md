@@ -35,10 +35,41 @@ When we create objects like `dog1 = Dog("Buddy", "Golden Retriever")`, we're ins
 
 ---
 
-## 2. Inheritance (Coming Soon)
+## 2. Inheritance
 
-- **Inheritance** allows a class to inherit properties and methods from another class. This promotes code reuse and is one of the key concepts in OOP.
-- We'll cover **Single Inheritance**, **Multiple Inheritance**, and **Method Overriding**.
+### What is Inheritance?
+
+- **Inheritance** is a mechanism in OOP that allows a class to inherit attributes and methods from another class.
+- It promotes **code reuse** and creates a hierarchical relationship between classes.
+- In Python, inheritance is implemented by creating a child class that inherits from a parent class.
+
+### Parent Class and Child Class:
+
+- A **parent class** (also called a **base class**) defines common attributes and methods.
+- A **child class** (also called a **subclass**) inherits from the parent class, allowing it to access its attributes and methods.
+- The child class can override methods of the parent class to provide specialized behavior.
+
+### Key Concepts:
+
+1. **`super()`**: A function used in the child class to call methods and constructors from the parent class.
+2. **Method Overriding**: When a method in the child class has the same name as one in the parent class, the child class's version "overrides" the parent class's version.
+3. **Abstract Methods**: These are methods in a parent class that are meant to be implemented by the child class.
+
+### Example Explanation:
+
+In our example:
+
+- The `Animal` class is the parent class with a method `speak()`, which we expect to be implemented by subclasses like `Dog` and `Cat`.
+- The `Dog` and `Cat` classes inherit from `Animal` and provide their own version of the `speak()` method.
+- By using inheritance, we avoid code duplication and maintain a clear hierarchy of classes.
+
+### Types of Inheritance:
+
+1. **Single Inheritance**: A class inherits from one parent class (as shown in the example).
+2. **Multiple Inheritance**: A class inherits from more than one parent class.
+3. **Multilevel Inheritance**: A class inherits from a class that has already inherited from another class.
+4. **Hierarchical Inheritance**: Multiple classes inherit from a single parent class.
+5. **Hybrid Inheritance**: A combination of multiple inheritance types.
 
 ---
 
