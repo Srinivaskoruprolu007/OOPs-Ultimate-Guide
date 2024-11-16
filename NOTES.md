@@ -184,15 +184,80 @@ In the provided example:
 
 ---
 
-## 6. Modules (Coming Soon)
+## 6. Modules
 
-- Python allows you to create **modules** to organize code logically. We'll explore how to import and use modules in Python.
-- We’ll create and import custom modules in this section.
+### What are Modules?
+
+- A module in Python is a file containing Python definitions and statements.
+- It allows you to organize and reuse code across multiple projects.
+
+### Key Concepts:
+
+1. **Importing Modules**:
+
+   - Use `import module_name` to import the entire module.
+   - Use `from module_name import function_name` to import specific functions.
+2. **Creating a Custom Module**:
+
+   - Save Python code in a `.py` file, and you can import and use it like any other module.
+   - Example: `math_utils.py` is a custom module for mathematical operations.
+3. **Standard Library Modules**:
+
+   - Python has built-in modules for file handling (`os`, `shutil`), data handling (`csv`, `json`), etc.
+   - Example: `import os` gives access to file system operations.
+4. **Third-Party Modules**:
+
+   - Install external libraries using `pip` (e.g., `numpy`, `pandas`).
+   - Example: `import numpy as np` for working with arrays.
+5. **Module Aliases**:
+
+   - You can use `as` to create a shortcut for module names.
+   - Example: `import numpy as np` makes `numpy` accessible as `np`.
+6. **Module Functions**:
+
+   - Define functions in your module and use them in any script.
+   - Example: `add(a, b)` in `math_utils.py`.
+7. **Executing Code in Modules**:
+
+   - Code outside functions in a module is executed when imported.
+   - Use the `if __name__ == "__main__":` condition to test or execute code only when the module is run directly.
+
+### Example Code:
+
+Refer to the **Module Demo**: [module_demo.py](examples/module_demo.py) for how to create and use custom modules.
+
+### Notes:
+
+- Use modules to keep your code organized and modular.
+- Ensure modules are small and focused on a single task (Single Responsibility Principle).
+- Use `__init__.py` for package initialization when creating Python packages.
+
+### Advantages of Using Modules:
+
+- **Reusability**: You can use the same code in multiple projects without rewriting it.
+- **Maintainability**: It's easier to manage smaller code files rather than a huge, monolithic script.
+- **Namespace**: Modules provide their own namespace, avoiding naming conflicts between different parts of the program.
 
 ---
 
-## 7. File Handling (Coming Soon)
+## 7. File Handling 
 
-- File handling allows you to read from and write to files in Python.
-- We’ll cover how to open, read, write, and close files.
-- Examples will include reading and writing to text files, as well as using JSON for data storage.
+### Key Operations:
+
+1. **Writing to a File**:
+
+   - Use the `open(file_name, 'w')` mode to create/overwrite a file.
+   - Use the `write()` method to write content to the file.
+2. **Reading from a File**:
+
+   - Use the `open(file_name, 'r')` mode to read a file.
+   - Use the `read()` or `readlines()` method to retrieve content.
+3. **Appending to a File**:
+
+   - Use the `open(file_name, 'a')` mode to add content to the end of the file without overwriting existing content.
+
+### Notes:
+
+- Always use the `with` statement to handle files to ensure proper closure.
+- Handle exceptions like `FileNotFoundError` for better reliability.
+- Avoid hardcoding file paths; use libraries like `os` or `pathlib` for dynamic paths.
