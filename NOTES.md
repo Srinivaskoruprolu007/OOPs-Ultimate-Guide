@@ -148,10 +148,39 @@ In our example:
 
 ---
 
-## 5. Abstraction (Coming Soon)
+## 5. Abstraction
 
-- **Abstraction** is the concept of hiding complex implementation details and showing only the necessary functionality to the user.
-- We’ll explore abstract classes and methods.
+### What is Abstraction?
+
+Abstraction hides the implementation details of a system and shows only the necessary functionality to the user. It provides a way to interact with objects without knowing their internal workings.
+
+### Key Concepts:
+
+1. **Abstract Classes**:
+
+   - Defined using the `ABC` module (`from abc import ABC`).
+   - Cannot be instantiated directly.
+   - Used to define common interfaces for derived classes.
+2. **Abstract Methods**:
+
+   - Declared using the `@abstractmethod` decorator.
+   - Must be implemented in all concrete subclasses.
+3. **Concrete Classes**:
+
+   - Derived classes that implement all the abstract methods of an abstract class.
+
+### Example Explanation:
+
+In the provided example:
+
+- The `Vehicle` class is abstract and defines the structure for vehicles.
+- Both `Car` and `Motorcycle` implement the methods `start_engine()` and `stop_engine()` differently, while adhering to the interface defined by `Vehicle`.
+
+### Why Use Abstraction?
+
+- **Reusability**: Abstract classes define reusable interfaces for related objects.
+- **Maintainability**: Changes in abstract classes propagate to derived classes, ensuring consistency.
+- **Encapsulation**: It complements encapsulation by exposing only the relevant details to the user.
 
 ---
 

@@ -66,7 +66,8 @@ This repository is aimed at helping learners understand OOP in Python through st
 
 ### Abstraction
 
-- [Code Example](examples/abstraction.py) (Coming Soon)
+- [Code Example](examples/abstraction.py)
+- [Mini-Project: Payment Gateway System](projects/hard/payment_gateway.py)
 - In-depth explanation in [NOTES.md](NOTES.md)
 
 ## Projects
