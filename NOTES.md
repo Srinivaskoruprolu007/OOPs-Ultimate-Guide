@@ -71,16 +71,44 @@ In our example:
 4. **Hierarchical Inheritance**: Multiple classes inherit from a single parent class.
 5. **Hybrid Inheritance**: A combination of multiple inheritance types.
 
+## 3. Polymorphism
+
+## What is Polymorphism?
+
+- **Polymorphism** means "many forms." It allows an object of a subclass to be treated as an object of a superclass.
+- The same method can behave differently based on the object it is called on.
+- This allows for code flexibility, making it easier to extend and maintain.
+
+### Key Concepts:
+
+1. **Method Overloading**:
+
+   - This refers to having multiple methods with the same name but different parameters. Python doesn't support traditional method overloading as seen in other languages like Java or C++, but it can be emulated by using default arguments or variable-length arguments.
+2. **Method Overriding**:
+
+   - In Python, subclasses can override methods of the parent class. This is the most common form of polymorphism.
+   - The subclass provides a specific implementation of a method, even if the method has the same name in the parent class.
+
+### Example Explanation:
+
+In our example:
+
+- We have a base class `Animal` with a method `sound()`, which is overridden in the subclasses `Dog`, `Cat`, and `Cow` to provide specific behaviors for each animal.
+- The `make_sound()` function calls the `sound()` method on any `Animal` object, and the correct method is invoked depending on the type of the object (i.e., Dog, Cat, or Cow).
+- This demonstrates **method overriding**, where the same method name behaves differently for different object types.
+
+### Types of Polymorphism:
+
+1. **Compile-time Polymorphism (Method Overloading)**:
+
+   - Achieved by having multiple methods with the same name but different parameters (handled via default arguments or variable-length arguments in Python).
+2. **Runtime Polymorphism (Method Overriding)**:
+
+   - Achieved by overriding methods in subclasses. The method invoked is determined at runtime based on the object's type.
+
 ---
 
-## 3. Polymorphism (Coming Soon)
-
-- **Polymorphism** allows objects of different classes to be treated as objects of a common superclass. It also allows methods to do different things based on the object it is acting upon.
-- We'll cover **Method Overloading** and **Method Overriding** in this section.
-
----
-
-## 4. Encapsulation (Coming Soon)
+# 4. Encapsulation (Coming Soon)
 
 - **Encapsulation** is the concept of bundling data (attributes) and methods that operate on the data into a single unit (class).
 - We'll also discuss the use of **private** and **public** access modifiers.
