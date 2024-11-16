@@ -17,7 +17,6 @@ This repository covers Python Object-Oriented Programming (OOP) concepts with:
 
 Happy coding!
 
-
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -55,7 +54,8 @@ This repository is aimed at helping learners understand OOP in Python through st
 
 ### Polymorphism
 
-- [Code Example](examples/polymorphism.py) (Coming Soon)
+- [Code Example](examples/polymorphism.py)
+- [Mini-Project: Shape Drawing System](projects/medium/shape_drawing_system.py)
 - In-depth explanation in [NOTES.md](NOTES.md)
 
 ### Encapsulation
